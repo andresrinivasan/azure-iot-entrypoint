@@ -15,4 +15,5 @@ RUN useradd -ms /bin/bash moduleuser
 USER moduleuser
 
 ##CMD [ "python", "-u", "./main.py" ]
-ENTRYPOINT [ "sh", "./module-entrypoint.sh"]
+##ENTRYPOINT [ "sh", "./module-entrypoint.sh"]
+CMD [ "sh", "./module-entrypoint.sh" ]
